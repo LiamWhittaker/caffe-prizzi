@@ -1,0 +1,17 @@
+.cta {
+  background-color: violet;
+  display: flex;
+  height: 35rem;
+
+  &__newsletter {
+    flex: 0 0 33%;
+  }
+
+  &__map {
+    flex: 0 0 33%
+  }
+
+  &__social {
+    flex: 0 0 33%;
+  }
+}

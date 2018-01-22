@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 4rem;
+  background-color: #f5ffcb;
+  min-height: 100vh; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: gray; }
+
+.heading-primary {
+  font-size: 6.5rem;
+  color: #a9eca2;
+  text-align: center;
+  text-transform: uppercase;
+  flex: 0 0 100%; }
+
+.header {
+  display: flex;
+  height: 20rem;
+  align-items: center;
+  background-color: greenyellow; }
+  .header__logo {
+    margin-right: auto; }
+
+.photos {
+  display: flex;
+  min-height: 65rem;
+  background-color: orange; }
+  .photos__left {
+    flex: 0 0 66.666%;
+    background-color: orangered; }
+  .photos__right {
+    flex: 0 0 33.334%;
+    background-color: red; }
+
+.info {
+  min-height: 65rem;
+  background-color: blueviolet; }
+  .info__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+  .info__history {
+    flex: 0 0 33%; }
+  .info__menu {
+    flex: 0 0 33%; }
+  .info__shop {
+    flex: 0 0 33%; }
+
+.cta {
+  background-color: violet;
+  display: flex;
+  height: 35rem; }
+  .cta__newsletter {
+    flex: 0 0 33%; }
+  .cta__map {
+    flex: 0 0 33%; }
+  .cta__social {
+    flex: 0 0 33%; }
+
+.footer {
+  background-color: black;
+  min-height: 10rem; }

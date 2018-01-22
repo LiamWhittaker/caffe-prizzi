@@ -1,0 +1,15 @@
+.photos {
+  display: flex;
+  min-height: 65rem;
+  background-color: orange;
+
+  &__left {
+    flex: 0 0 66.666%;
+    background-color: orangered;
+  }
+
+  &__right {
+    flex: 0 0 33.334%;
+    background-color: red;
+  }
+}
