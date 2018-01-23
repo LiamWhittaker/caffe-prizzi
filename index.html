@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Caffè Prizzi</title>
+<title>Home | Caffè Prizzi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
@@ -13,11 +13,18 @@
 
   <header class="header">
     <div class="header__logo">
-      Logo
+      <a href="#">
+        <img src="/img/logo.png" alt="Logo" class="header__logo--full">
+      </a>
     </div>
 
-    <nav class="header__nav">
-      Nav
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Our History</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Our Menu</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Shop</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
 
@@ -25,10 +32,21 @@
 
     <section class="photos">
       <div class="photos__left">
-        left
+        <img srcset="/img/cafe-2-sm.jpeg 400w, /img/cafe-2-lg.jpeg 1280w" 
+             alt="Cafe" 
+             class="photo photo--lg"
+             src="/img/cafe-2-lg.jpeg">
       </div>
       <div class="photos_right">
-        right
+        <img srcset="/img/cafe-4-sm.jpeg 400w, /img/cafe-4-lg.jpeg 1280w" 
+             alt="Cafe" 
+             class="photo photo--sm" 
+             src="/img/cafe-4-lg.jpeg">
+
+        <img srcset="/img/cafe-3-sm.jpeg 400w, /img/cafe-3-lg.jpeg 1280w" 
+             alt="Cafe" 
+             class="photo photo--sm" 
+             src="/img/cafe-3-lg.jpeg">
       </div>
     </section>
 

@@ -23,29 +23,61 @@ body {
 
 .heading-primary {
   font-size: 6.5rem;
-  color: #a9eca2;
+  color: #ff5c5c;
   text-align: center;
   text-transform: uppercase;
   flex: 0 0 100%; }
 
+.nav__list {
+  display: flex;
+  list-style: none; }
+
+.nav__item {
+  padding: 0 2rem; }
+
+.nav__link, .nav__link:link, .nav__link:visited {
+  padding: .3rem .6rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222831;
+  font-weight: 100;
+  letter-spacing: .1rem;
+  transition: all .3s;
+  outline: none; }
+
+.nav__link:hover {
+  color: #ff5c5c; }
+
+.nav__link:active {
+  color: #8f0000;
+  text-shadow: 0 1rem 2rem rgba(34, 40, 49, 0.3); }
+
+.photo {
+  width: 100%; }
+  .photo--lg {
+    padding: 1rem; }
+  .photo--sm {
+    padding: .5rem;
+    width: 96.6%; }
+
 .header {
   display: flex;
   height: 20rem;
-  align-items: center;
-  background-color: greenyellow; }
+  align-items: center; }
   .header__logo {
     margin-right: auto; }
+    .header__logo--full {
+      height: 20rem;
+      width: 20rem; }
 
 .photos {
   display: flex;
-  min-height: 65rem;
-  background-color: orange; }
+  align-items: center;
+  margin-top: 5rem; }
   .photos__left {
-    flex: 0 0 66.666%;
-    background-color: orangered; }
+    flex: 0 0 66.666%; }
   .photos__right {
-    flex: 0 0 33.334%;
-    background-color: red; }
+    flex: 0 0 33.334%; }
 
 .info {
   min-height: 65rem;

@@ -1,0 +1,35 @@
+.nav {
+  
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item {
+    padding: 0 2rem;
+  }
+
+  &__link, 
+  &__link:link, 
+  &__link:visited, {
+    padding: .3rem .6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-black;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    transition: all .3s;
+    outline: none;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+
+  &__link:active {
+    color: darken($color-primary, $amount: 40%);
+    text-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+  }
+
+
+}

@@ -1,0 +1,12 @@
+.photo {
+  width: 100%;
+
+  &--lg {
+    padding: 1rem;
+  }
+
+  &--sm {
+    padding: .5rem;
+    width: 96.6%;
+  }
+}
