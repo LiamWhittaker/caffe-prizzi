@@ -1,12 +1,14 @@
 .photo {
   width: 100%;
+  border-radius: 3px;
 
   &--lg {
     padding: 1rem;
+    
   }
 
   &--sm {
     padding: .5rem;
-    width: 96.6%;
+    width: 97%;
   }
 }

@@ -1,12 +1,7 @@
 .photos {
-  display: flex;
-  align-items: center;
-  margin-top: 5rem;
-
   &__left {
     flex: 0 0 66.666%;
   }
-
   &__right {
     flex: 0 0 33.334%;
   }

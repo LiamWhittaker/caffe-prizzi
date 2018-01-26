@@ -9,9 +9,13 @@
 
 @import 'components/nav';
 @import 'components/photo';
+@import 'components/infocard';
+@import 'components/btn';
 
 @import 'layout/header';
 @import 'layout/photos';
 @import 'layout/info';
 @import 'layout/cta';
 @import 'layout/footer';
+
+@import 'pages/home';

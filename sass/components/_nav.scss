@@ -12,24 +12,53 @@
   &__link, 
   &__link:link, 
   &__link:visited, {
+    position: relative;
     padding: .3rem .6rem;
     text-decoration: none;
     text-transform: uppercase;
-    color: $color-black;
+    color: $color-secondary-light;
     font-weight: 100;
     letter-spacing: .1rem;
     transition: all .3s;
     outline: none;
   }
 
+  &__link::before,
+  &__link::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid rgba($color-black, 0.1);
+    border-radius: 40%;
+    opacity: 0;
+    transition: all .3s;
+    transform: translate(-50%, -50%) scale(0.2);
+  }
+
+  &__link::after {
+    width: 9rem;
+    height: 9rem;
+    border-width: 6px;
+    transform: translate(-50%, -50%) scale(0.8);
+  }
+  
+  &__link:hover::before,
+  &__link:hover::after,
+  &__link:active::before,
+  &__link:active::after{
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
   &__link:hover {
-    color: $color-primary;
+    color: $color-secondary;
   }
 
   &__link:active {
-    color: darken($color-primary, $amount: 40%);
+    color: darken($color-secondary, 10%);
     text-shadow: 0 1rem 2rem rgba($color-black, 0.3);
   }
-
-
 }

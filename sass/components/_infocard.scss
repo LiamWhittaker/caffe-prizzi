@@ -1,0 +1,14 @@
+.infocard {
+  display: flex;
+  flex-direction: column;
+  background-color: lighten($color-bg, 3%);
+  margin-top: 2rem;
+  flex: 0 0 25%;
+  // border: 1px solid $color-secondary;
+  border-radius: 7px;
+  padding: 2rem;
+
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
+}

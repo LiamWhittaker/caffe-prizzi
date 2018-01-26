@@ -1,0 +1,26 @@
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin: 0 auto;
+  margin-top: 2rem;
+  // border: 1px solid $color-secondary;
+  padding: 1.2rem 3rem;
+  border-radius: 4px;
+  background-color: $color-bg;
+  text-decoration: none;
+  color: $color-secondary;
+  font-weight: 100;
+  box-shadow: 0 1rem 4rem rgba($color-black, .2);
+
+  &:hover {
+    background-color: $color-secondary;
+    // border: 1px solid $color-secondary-light;
+    color: $color-black;
+  }
+
+  &:active {
+
+  }
+
+}
