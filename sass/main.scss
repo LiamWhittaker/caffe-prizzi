@@ -7,15 +7,16 @@
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/btn';
+@import 'components/infocard';
+@import 'components/map';
 @import 'components/nav';
 @import 'components/photo';
-@import 'components/infocard';
-@import 'components/btn';
+@import 'components/social-icons';
 
-@import 'layout/header';
-@import 'layout/photos';
-@import 'layout/info';
 @import 'layout/cta';
-@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/info';
+@import 'layout/photos';
 
 @import 'pages/home';

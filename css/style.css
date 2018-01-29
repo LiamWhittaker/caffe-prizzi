@@ -21,11 +21,16 @@ body {
   line-height: 1.7;
   color: gray; }
 
-a {
-  font-family: 'Exo', sans-serif; }
+a,
+a:link,
+a:visited {
+  font-family: 'Exo', sans-serif;
+  color: #aed09e; }
 
 .paragraph {
   font-size: 1.3rem; }
+  .paragraph--inverse {
+    color: #f1e8a7; }
 
 .heading-primary {
   font-family: Exo, sans-serif;
@@ -44,6 +49,69 @@ a {
   text-transform: uppercase;
   flex: 0 0 100%;
   margin-bottom: 2rem; }
+
+.heading-tertiary {
+  font-family: Exo, sans-serif;
+  font-size: 2rem;
+  color: #f1e8a7;
+  text-align: center;
+  text-transform: uppercase;
+  flex: 0 0 100%; }
+
+.center {
+  text-align: center; }
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  margin: 3rem 0 1rem 0;
+  padding: 1.2rem 3rem;
+  border-radius: 4px;
+  background-color: #f1e8a7;
+  text-decoration: none;
+  color: #a8896c;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-shadow: 0 1rem 4rem rgba(34, 40, 49, 0.2);
+  transition: all .3s;
+  outline: none; }
+  .btn:hover,
+  .btn:link:hover,
+  .btn:visited:hover {
+    background-color: #a8896c;
+    color: #f1e8a7;
+    box-shadow: 0 2rem 4rem rgba(34, 40, 49, 0.2); }
+  .btn:active,
+  .btn:link:active,
+  .btn:visited:active {
+    transform: translate(1px, 2px); }
+
+.btn--cta {
+  background-color: inherit;
+  font-size: 2rem;
+  color: #f1e8a7;
+  padding: .7rem 2rem;
+  border: none;
+  margin-left: -5rem;
+  border-radius: 3px;
+  outline: none; }
+
+.infocard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f3ebb4;
+  margin-top: 2rem;
+  flex: 0 0 25%;
+  border-radius: 3px;
+  padding: 2rem;
+  box-shadow: 0 1rem 3rem rgba(34, 40, 49, 0.2); }
+  .infocard:not(:last-child) {
+    margin-right: 5rem; }
+
+.map {
+  box-shadow: 0 1rem 3rem rgba(34, 40, 49, 0.4); }
 
 .nav__list {
   display: flex;
@@ -102,35 +170,62 @@ a {
     padding: .5rem;
     width: 97%; }
 
-.infocard {
-  display: flex;
-  flex-direction: column;
-  background-color: #f3ebb4;
-  margin-top: 2rem;
-  flex: 0 0 25%;
-  border-radius: 7px;
-  padding: 2rem; }
-  .infocard:not(:last-child) {
-    margin-right: 5rem; }
+.fa {
+  color: #f1e8a7;
+  transition: all .6s; }
+  .fa-instagram:hover {
+    color: #c13584; }
+  .fa-twitter:hover {
+    color: #1da1f2; }
+  .fa-facebook:hover {
+    color: #3b5998; }
 
-.btn,
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 2rem;
-  padding: 1.2rem 3rem;
-  border-radius: 4px;
-  background-color: #f1e8a7;
-  text-decoration: none;
-  color: #e8870d;
-  font-weight: 100;
-  box-shadow: 0 1rem 4rem rgba(34, 40, 49, 0.2); }
-  .btn:hover,
-  .btn:link:hover,
-  .btn:visited:hover {
-    background-color: #e8870d;
-    color: #222831; }
+.cta {
+  display: flex;
+  align-items: center; }
+  .cta > * {
+    flex: 0 0 33%;
+    padding: 2rem; }
+  .cta__newsletter {
+    justify-content: center; }
+  .cta__form {
+    margin-top: 2rem;
+    display: flex; }
+  .cta__label {
+    color: #f1e8a7; }
+  .cta__input {
+    width: 90%;
+    background-color: #a8896c;
+    color: #f1e8a7;
+    font-family: inherit;
+    font-size: inherit;
+    padding: .7rem 2rem;
+    border: 1px solid #f1e8a7;
+    box-shadow: none;
+    border-radius: 3px;
+    transition: all .3s; }
+    .cta__input:-moz-placeholder {
+      box-shadow: none !important; }
+    .cta__input:invalid {
+      box-shadow: none; }
+  .cta__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30rem; }
+    .cta__social-icons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%; }
+  .cta__icons {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .cta__icons > * {
+      padding: 2rem; }
+  .cta__social-name {
+    margin: 0 auto; }
 
 .header {
   display: flex;
@@ -148,29 +243,17 @@ a {
 .photos__right {
   flex: 0 0 33.334%; }
 
-.cta {
-  background-color: violet;
-  display: flex;
-  height: 35rem; }
-  .cta__newsletter {
-    flex: 0 0 33%; }
-  .cta__map {
-    flex: 0 0 33%; }
-  .cta__social {
-    flex: 0 0 33%; }
-
-.footer {
-  background-color: black;
-  min-height: 10rem; }
-
 .section-photos {
   display: flex;
   align-items: center;
   margin-top: 5rem; }
 
 .section-info {
-  min-height: 65rem; }
+  padding-bottom: 10rem; }
 
 .infocard-container {
   display: flex;
   justify-content: center; }
+
+.section-cta {
+  background-color: #a8896c; }

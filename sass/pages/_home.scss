@@ -5,10 +5,19 @@
 }
 
 .section-info {
-  min-height: 65rem;
+  padding-bottom: 10rem;
 }
 
 .infocard-container {
   display: flex;
   justify-content: center;
+}
+
+.section-cta {
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   $color-bg,
+  //   $color-secondary-light
+  // );
+  background-color: $color-secondary-light;
 }

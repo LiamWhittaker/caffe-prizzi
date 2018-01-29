@@ -1,0 +1,17 @@
+.fa {
+  color: $color-bg;
+  transition: all .6s;
+
+  &-instagram:hover {
+    color: #c13584;
+  }
+ 
+  &-twitter:hover {
+    color: #1da1f2;
+  }
+
+  &-facebook:hover {
+    color: #3b5998;
+  }
+
+}

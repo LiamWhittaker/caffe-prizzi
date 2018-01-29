@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <title>Home | Caffè Prizzi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Exo|Quicksand" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
 
 </head>
@@ -86,27 +89,48 @@
           </p>
           <a href="#" class="btn">Visit shop</a>
         </div>
-
-      </div>
-
-    </section>
-
-    <section class="cta">
-      <div class="cta__newsletter">
-        newsletter
-      </div>
-      <div class="cta__map">
-        map
-      </div>
-      <div class="cta__social">
-        social media
       </div>
     </section>
 
-    <footer class="footer">
-      Footer
-    </footer>
-  
+    <section class="section-cta">
+      <div class="cta">
+        <div class="cta__newsletter">
+          <p class="paragraph--inverse">Enter your email address to sign up for our newsletter. Be first to hear about our menu changes and recieve exclusive discounts!</p>
+          <form action="#" method="post" class="cta__form">
+            <!-- <label class="cta__label" for="email">Email</label> -->
+            <input class="cta__input" type="email" name="email" id="email" placeholder="Please enter your email here" required>
+            <button class="btn--cta">
+              <span class="lnr lnr-chevron-right-circle">
+            </button>
+          </form>
+        </div>
+        <div class="cta__map">
+          <img class="map" src="https://maps.googleapis.com/maps/api/staticmap?center=Knutsford&zoom=15&size=400x300&markers=icon:https://chart.apis.google.com/chart?chst=d_map_pin_icon%26chld=cafe%257C996600%7C+Knustford&key=AIzaSyD8htJ4dYpeYSROqyBmgEcv-gNeu3jga20"
+          alt="Map of our location">
+        </div>
+        <div class="cta__social">
+          <div class="cta__social-icons">
+
+            <div class="cta__follow-us">
+              <h3 class="heading-tertiary">Follow us on...</h3>
+            </div>
+
+            <div class="cta__icons">
+              <a href="#"><i class="fa fa-3x fa-instagram" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-3x fa-twitter" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa fa-3x fa-facebook" aria-hidden="true"></i></a>
+            </div>
+          </div>
+          <div class="madeby">
+            <p class="paragraph--inverse center">Site designed by
+              <strong>
+                <a href="http://liamwhittaker.co.uk">Liam Whittaker</a>
+              </strong> &copy; 2018.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>  
   </main>
 </body>
 </html>

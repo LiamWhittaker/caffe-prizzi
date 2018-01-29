@@ -6,12 +6,27 @@ body {
   color: gray;
 }
 
-a {
+a,
+a:link,
+a:visited {
   font-family: 'Exo', sans-serif;
+  color: $color-primary-light;
+}
+
+a:hover {
+
+}
+
+a:active {
+
 }
 
 .paragraph {
   font-size: 1.3rem;
+
+  &--inverse {
+    color: $color-bg;
+  }
 }
 
 .heading-primary {
@@ -32,4 +47,13 @@ a {
   text-transform: uppercase;
   flex: 0 0 100%;
   margin-bottom: 2rem;
+}
+
+.heading-tertiary {
+  font-family: Exo, sans-serif;
+  font-size: 2rem;
+  color: $color-bg;
+  text-align: center;
+  text-transform: uppercase;
+  flex: 0 0 100%;
 }
