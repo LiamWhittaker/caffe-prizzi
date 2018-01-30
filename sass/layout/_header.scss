@@ -1,14 +1,30 @@
 .header {
   display: flex;
-  height: 20rem;
+  // height: 20rem;
   align-items: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 
   &__logo {
     margin-right: auto;
 
+    @include respond(tab-port) {
+      margin: 2rem auto;
+    }
+
+
     &--full {
       height: 15rem;
       width: 35rem;
+    
+      @include respond(phone) {
+        height: 7.5rem;
+        width: 17.5rem;
+      }
+
+
     }
   }
 }

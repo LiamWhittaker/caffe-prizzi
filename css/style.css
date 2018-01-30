@@ -13,13 +13,16 @@ body {
   padding: 4rem;
   background-color: #f1e8a7;
   min-height: 100vh; }
+  @media only screen and (max-width: 75em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: gray; }
+  color: #504A4B; }
 
 a,
 a:link,
@@ -40,6 +43,9 @@ a:visited {
   text-transform: uppercase;
   flex: 0 0 100%;
   margin: 8rem 0 4rem 0; }
+  @media only screen and (max-width: 84.375em) {
+    .heading-primary {
+      font-size: 3.8rem; } }
 
 .heading-secondary {
   font-family: Exo, sans-serif;
@@ -47,7 +53,6 @@ a:visited {
   color: #a8896c;
   text-align: center;
   text-transform: uppercase;
-  flex: 0 0 100%;
   margin-bottom: 2rem; }
 
 .heading-tertiary {
@@ -119,6 +124,9 @@ a:visited {
 
 .nav__item {
   padding: 0 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__item {
+      padding: 0 .5rem; } }
 
 .nav__link, .nav__link:link, .nav__link:visited {
   position: relative;
@@ -130,6 +138,9 @@ a:visited {
   letter-spacing: .1rem;
   transition: all .3s;
   outline: none; }
+  @media only screen and (max-width: 37.5em) {
+    .nav__link, .nav__link:link, .nav__link:visited {
+      font-size: 1.3rem; } }
 
 .nav__link::before, .nav__link::after {
   content: '';
@@ -229,13 +240,22 @@ a:visited {
 
 .header {
   display: flex;
-  height: 20rem;
   align-items: center; }
+  @media only screen and (max-width: 56.25em) {
+    .header {
+      flex-direction: column; } }
   .header__logo {
     margin-right: auto; }
+    @media only screen and (max-width: 56.25em) {
+      .header__logo {
+        margin: 2rem auto; } }
     .header__logo--full {
       height: 15rem;
       width: 35rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__logo--full {
+          height: 7.5rem;
+          width: 17.5rem; } }
 
 .photos__left {
   flex: 0 0 66.666%; }

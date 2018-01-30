@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: gray;
+  color: #504A4B;
 }
 
 a,
@@ -37,6 +37,10 @@ a:active {
   text-transform: uppercase;
   flex: 0 0 100%;
   margin: 8rem 0 4rem 0;
+
+  @include respond(1350) {
+    font-size: 3.8rem;
+  }
 }
 
 .heading-secondary {
@@ -45,7 +49,7 @@ a:active {
   color: $color-secondary-light;
   text-align: center;
   text-transform: uppercase;
-  flex: 0 0 100%;
+  // flex: 0 0 100%;
   margin-bottom: 2rem;
 }
 

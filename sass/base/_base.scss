@@ -15,4 +15,8 @@ body {
   padding: 4rem;
   background-color: $color-bg;
   min-height: 100vh;
+
+  @include respond(tab-land) {
+    padding: 0;
+  }
 }
