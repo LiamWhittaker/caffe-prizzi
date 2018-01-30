@@ -1,14 +1,21 @@
 .photo {
   width: 100%;
-  border-radius: 3px;
+  padding: 1rem;
+  
+  @include respond(phone) {
+    padding: 0 1rem;
+  }
 
   &--lg {
-    padding: 1rem;
     
   }
 
   &--sm {
-    padding: .5rem;
-    width: 97%;
+    padding: 0 1rem 0 0;
+
+    @include respond(phone) {
+      padding: 0 1rem;
+      display: none;
+    }
   }
 }

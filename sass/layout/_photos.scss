@@ -1,8 +1,10 @@
 .photos {
+  overflow: hidden;
+
   &__left {
-    flex: 0 0 66.666%;
+    flex: 0 0 67%;
   }
   &__right {
-    flex: 0 0 33.334%;
+    flex: 0 0 30%;
   }
 }

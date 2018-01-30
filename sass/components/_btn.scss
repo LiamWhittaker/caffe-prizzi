@@ -14,6 +14,12 @@
   transition: all .3s;
   outline: none;
 
+  @include respond(tab-port) {
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    padding: 1rem 2rem;
+  }
+
   &:hover {
     background-color: $color-secondary-light;
     color: $color-bg;

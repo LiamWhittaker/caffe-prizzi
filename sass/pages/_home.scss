@@ -2,15 +2,28 @@
   display: flex;
   align-items: center;
   margin-top: 5rem;
+
+  @include respond(phone) {
+    flex-direction: column;
+    margin-top: 3rem;
+  }
 }
 
 .section-info {
   padding-bottom: 10rem;
+
+  @include respond(tab-port) {
+    padding-bottom: 4rem;
+  }
 }
 
 .infocard-container {
   display: flex;
   justify-content: center;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
 }
 
 .section-cta {

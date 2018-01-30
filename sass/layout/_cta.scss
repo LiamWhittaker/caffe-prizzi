@@ -1,14 +1,35 @@
 .cta {
   display: flex;
   align-items: center;
+  justify-content: center;
+  
+  @include respond(tab-land) {
+    flex-wrap: wrap;
+  }
+  
+  @include respond(phone) {
+    flex-direction: column;
+  }
 
   & > * {
     flex: 0 0 33%;
     padding: 2rem;
+
+    @include respond(1350) {
+      padding: 2rem 1rem;
+    }
   }
 
   &__newsletter {
     justify-content: center;
+
+    @include respond(1350) {
+      padding-left: 2rem;
+    }
+
+    @include respond(tab-land) {
+      flex: 0 0 40%;
+    }
   }
 
   &__form {
@@ -41,11 +62,27 @@
     }
   }
 
+  &__map {
+    @include respond(tab-land) {
+      order: -1;
+      flex: 0 0 60%;
+    }
+  }
+
   &__social {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     height: 30rem;
+
+    @include respond(tab-land) {
+      height: auto;
+    }
+
+    @include respond(phone) {
+      padding-top: 0;
+    }
 
     &-icons {
       display: flex;
@@ -66,7 +103,9 @@
     }
   }
 
-  &__social-name {
-    margin: 0 auto;
+  &__follow-us {
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 }

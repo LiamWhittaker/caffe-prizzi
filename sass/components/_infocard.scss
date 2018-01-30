@@ -9,7 +9,15 @@
   padding: 2rem;
   box-shadow: 0 1rem 3rem rgba($color-black, .2);
 
+  @include respond(tab-port) {
+    margin: 1rem;
+  }
+
   &:not(:last-child) {
     margin-right: 5rem;
+    
+    @include respond(tab-port) {
+      margin: 1rem;
+    }
   }
 }
